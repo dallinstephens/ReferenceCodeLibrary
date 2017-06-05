@@ -1,0 +1,214 @@
+/* body */
+body {background-color:lightgrey;}
+
+/* container */
+.container {font:14px Calibri, Arial; width:275px; height:100%; margin-left:-5px; padding-right:25px;}
+
+h2 {padding-top:5px;}
+
+/* Transparent Button for the +/- Button */
+.transparent {
+  /* RGBa with 0.6 opacity */
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: none !important;
+}
+.transparent:hover {
+  /* RGBa with 0.6 opacity */
+  background-color: rgba(0, 51, 0, 0.8) !important;
+}
+
+/* link styling */
+ul.panel-position-width {
+  margin-left: -50px;
+  width: 108.5%;
+}
+
+/* Color A of Collapsible List */
+.color-a .ui-collapsible-heading-collapsed > .ui-collapsible-heading-toggle {
+   background:#737373 !important;
+   color:#fff !important;
+   font-weight: lighter !important;
+}
+
+.color-a .ui-collapsible-heading-collapsed > .ui-collapsible-heading-toggle:hover {
+  background:#404040 !important;
+  color:#fff !important;
+  font-weight: lighter !important;
+}
+
+.color-a .ui-collapsible-heading-toggle {
+   background:#737373 !important;
+   color:#fff !important;
+   font-weight: lighter !important;
+}
+
+.color-a .ui-collapsible-heading-toggle:hover {
+   background:#404040 !important;
+   color:#fff !important;
+   font-weight: lighter !important;
+}
+
+/* Color B Collapsible Lists */
+.color-b .ui-collapsible-heading-collapsed > .ui-collapsible-heading-toggle {
+   background:#f9f9f9 !important;
+   color:#000 !important;
+   font-size:100%;
+}
+
+.color-b .ui-collapsible-heading-collapsed > .ui-collapsible-heading-toggle:hover {
+  background:#d9d9d9 !important;
+  color:#000 !important;
+}
+
+.b1 .ui-collapsible-heading-toggle {
+   background:#00e6ac !important;
+   color:#000 !important;
+   font-size:100%
+}
+
+.b1 .ui-collapsible-heading-toggle:hover {
+   background:#00e6ac !important;
+   color:#000 !important;
+}
+
+/* Remove Blue Halo Glow */
+.ui-focus,
+.ui-btn:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* Adjust Height of the Buttons */
+.ui-btn {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+/* Remove horizontal scrollbar and having vertical scrollbar appear when needed from jquery mobile panel */
+.ui-panel.ui-panel-open {
+  position:fixed;
+}
+
+.ui-panel {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.ui-panel-inner {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* List Styling */
+ul.first, .second {
+    list-style-type: none;
+    margin-left:0;
+    padding-left:0;
+    color: #000;
+}
+
+ul.third {
+    list-style-type: none;
+    margin-left:5px;
+    padding-left:0;
+    color: #000;
+}
+
+ul.fourth {
+    list-style-type: circle;
+    margin-left: 34px;
+    padding: 0;
+}
+
+ul.fifth {
+    list-style-type: circle;
+    margin-left: 16px;
+    padding: 0;
+}
+
+.A-G, .H-N, .O-T, .U-Z {
+    display: block;
+    background-color: #FFF;
+    color: #000 !important;
+    text-decoration: none;
+    padding: 3px 3px;
+}
+
+.letters-selected {
+    display: block;
+    background-color: #000;
+    color: #FFF !important;
+}
+
+.main-topic-selected {
+    background-color: #41db6f !important;
+}
+
+.main-topic-selected-2 {
+    background-color: #41db6f !important;
+}
+
+ul.first-selected a {
+    display: block;
+    background-color: #000;
+    color: #FFF !important;
+    text-decoration: none;
+    padding: 3px 3px;
+}
+
+ul.second a {
+    display: block;
+    color: #000 !important;
+    text-decoration: none;
+    padding: 3px 3px;
+}
+
+ul.third a {
+    display: inline;
+    background-color: #fff;
+    color: #000 !important;
+    text-decoration: none;
+    padding: 0px 3px;
+}
+
+.fontSize {font-size:12px !important;}
+
+ul.fourth a {
+    display: inline;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 0px 0px;
+}
+
+ul.fifth a {
+    text-decoration: underline;
+}
+
+/* Change the link color on hover */
+
+ul.first a:hover {
+    background-color: #000;
+    color: #fff !important;
+}
+
+ul.second a:hover {
+    background-color: #cccccc;
+    color: #000 !important;
+}
+
+ul.third a:hover {
+    background-color: #cccccc;
+    color: #000 !important;
+}
+
+ul.fourth a:focus {
+    background-color: #41db6f;
+    color: #000 !important;
+}
+
+ul.fifth a:hover {
+    background-color: #cccccc;
+    color: #000 !important;
+}
