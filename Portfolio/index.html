@@ -7,175 +7,224 @@
 
 <title>My Portfolio</title>
 
-<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="css/libraries/jquery.mobile-1.4.5.min.css">
 
-<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/index/pages.css">
 
-<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/libraries/jquery-1.11.3.min.js"></script>
 
-<script src="js/pages.js"></script>
+<script src="js/libraries/jquery.mobile-1.4.5.min.js"></script>
 
-<script src="js/jquery.mobile-1.4.5.min.js"></script>
-
-<script>
-  function openPanel() {
-      $("#myPanel").panel("open");
-  }
-</script>
+<script src="js/index/pages.js"></script>
 
 </head>
 
-<body onload="openPanel()">
+<body>
 
-<div data-role="page" id="pageone"  style="overflow-y:hidden !important;">
+<div data-role="page" id="pageone">
 
-  <div class="container" data-role="panel" id="myPanel" data-display="overlay" data-dismissible="false" data-position-fixed="true">
+  <div id="myPanel" class="myPanel" data-role="panel" data-display="overlay" data-dismissible="false" data-position-fixed="true">
     <div>
       <h2>Programming Languages</h2>
       <hr style="position: relative; top: -7px;">
-      <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
+      <div id="ng1" data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
         <h3>AngularJS V1</h3>
           <ul class="panel-position-width">
             <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b1">
               <h4>Applications</h4>
-                <li><a id="applications1" onmouseover="click();" href="pl/ng1/applications1.html" target="iframe_a">Applications: 1</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/applications2.html" target="iframe_a">Applications: 2</a></li>
+                <li><a href="html/pl/ng1/applications1.html" class="topic">Applications: 1</a></li>
+                <li><a href="html/pl/ng1/applications2.html" class="topic">Applications: 2</a></li>
             </div>
             <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b1">
               <h4>Directives</h4>
-                <li><a onmouseover="click();" href="pl/ng1/directives1.html" target="iframe_a">Directives: 1</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/directives2.html" target="iframe_a">Directives: 2</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/directives3.html" target="iframe_a">Directives: 3</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/directives4.html" target="iframe_a">Directives: 4</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/directives5.html" target="iframe_a">Directives: 5</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/directives6.html" target="iframe_a">Directives: 6</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/directives7.html" target="iframe_a">Directives: 7</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/directives8.html" target="iframe_a">Directives: 8</a></li>
+                <li><a href="html/pl/ng1/directives1.html">Directives: 1</a></li>
+                <li><a href="html/pl/ng1/directives2.html">Directives: 2</a></li>
+                <li><a href="html/pl/ng1/directives3.html">Directives: 3</a></li>
+                <li><a href="html/pl/ng1/directives4.html">Directives: 4</a></li>
+                <li><a href="html/pl/ng1/directives5.html">Directives: 5</a></li>
+                <li><a href="html/pl/ng1/directives6.html">Directives: 6</a></li>
+                <li><a href="html/pl/ng1/directives7.html">Directives: 7</a></li>
+                <li><a href="html/pl/ng1/directives8.html">Directives: 8</a></li>
             </div>
             <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b1">
               <h4>Expressions</h4>
-                <li><a onmouseover="click();" href="pl/ng1/expressions1.html" target="iframe_a">Expressions: 1</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/expressions2.html" target="iframe_a">Expressions: 2</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/expressions3.html" target="iframe_a">Expressions: 3</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/expressions4.html" target="iframe_a">Expressions: 4</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/expressions5.html" target="iframe_a">Expressions: 5</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/expressions6.html" target="iframe_a">Expressions: 6</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/expressions7.html" target="iframe_a">Expressions: 7</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/expressions8.html" target="iframe_a">Expressions: 8</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/expressions9.html" target="iframe_a">Expressions: 9</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/expressions10.html" target="iframe_a">Expressions: 10</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/expressions11.html" target="iframe_a">Expressions: 11</a></li>
+                <li><a href="html/pl/ng1/expressions1.html">Expressions: 1</a></li>
+                <li><a href="html/pl/ng1/expressions2.html">Expressions: 2</a></li>
+                <li><a href="html/pl/ng1/expressions3.html">Expressions: 3</a></li>
+                <li><a href="html/pl/ng1/expressions4.html">Expressions: 4</a></li>
+                <li><a href="html/pl/ng1/expressions5.html">Expressions: 5</a></li>
+                <li><a href="html/pl/ng1/expressions6.html">Expressions: 6</a></li>
+                <li><a href="html/pl/ng1/expressions7.html">Expressions: 7</a></li>
+                <li><a href="html/pl/ng1/expressions8.html">Expressions: 8</a></li>
+                <li><a href="html/pl/ng1/expressions9.html">Expressions: 9</a></li>
+                <li><a href="html/pl/ng1/expressions10.html">Expressions: 10</a></li>
+                <li><a href="html/pl/ng1/expressions11.html">Expressions: 11</a></li>
             </div>
             <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b1">
               <h4>Model</h4>
-                <li><a onmouseover="click();" href="pl/ng1/angularngmodeldirective1.html" target="iframe_a">Model: 1</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/angularngmodeldirective2.html" target="iframe_a">Model: 2</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/angularngmodeldirective3.html" target="iframe_a">Model: 3</a></li>
+                <li><a href="html/pl/ng1/angularngmodeldirective1.html">Model: 1</a></li>
+                <li><a href="html/pl/ng1/angularngmodeldirective2.html">Model: 2</a></li>
+                <li><a href="html/pl/ng1/angularngmodeldirective3.html">Model: 3</a></li>
             </div>
             <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b1">
               <h4>Modules</h4>
-                <li><a onmouseover="click();" href="pl/ng1/modules1.html" target="iframe_a">Modules: 1</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/modules2.html" target="iframe_a">Modules: 2</a></li>
-                <li><a onmouseover="click();" href="pl/ng1/modules3.html" target="iframe_a">Modules: 3</a></li>
+                <li><a href="html/pl/ng1/modules1.html">Modules: 1</a></li>
+                <li><a href="html/pl/ng1/modules2.html">Modules: 2</a></li>
+                <li><a href="html/pl/ng1/modules3.html">Modules: 3</a></li>
             </div>
           </ul>
       </div>
-      <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
+      <div id="ng2" data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
        <h3>AngularJS V2</h3>
          <ul class="panel-position-width">
            <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b2">
              <h4>Vacant</h4>
-              <li><a onmouseover="click();" href="" target="iframe_a">Vacant</a></li>
+              <li><a href="">Vacant</a></li>
            </div>
          </ul>
       </div>
-      <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
+      <div id="css" data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
        <h3>CSS</h3>
          <ul class="panel-position-width">
            <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b3">
              <h4>Borders</h4>
-              <li><a onmouseover="click();" href="pl/css/cssborders1.html" target="iframe_a">Borders: 1</a></li>
-              <li><a onmouseover="click();" href="pl/css/cssborders2.html" target="iframe_a">Borders: 2</a></li>
-              <li><a onmouseover="click();" href="pl/css/cssborders3.html" target="iframe_a">Borders: 3</a></li>
-              <li><a onmouseover="click();" href="pl/css/cssborders4.html" target="iframe_a">Borders: 4</a></li>
-              <li><a onmouseover="click();" href="pl/css/cssborders5.html" target="iframe_a">Borders: 5</a></li>
-              <li><a onmouseover="click();" href="pl/css/cssborders6.html" target="iframe_a">Borders: 6</a></li>
-              <li><a onmouseover="click();" href="pl/css/cssborders7.html" target="iframe_a">Borders: 7</a></li>
+              <li><a href="html/pl/css/cssborders1.html">Borders: 1</a></li>
+              <li><a href="html/pl/css/cssborders2.html">Borders: 2</a></li>
+              <li><a href="html/pl/css/cssborders3.html">Borders: 3</a></li>
+              <li><a href="html/pl/css/cssborders4.html">Borders: 4</a></li>
+              <li><a href="html/pl/css/cssborders5.html">Borders: 5</a></li>
+              <li><a href="html/pl/css/cssborders6.html">Borders: 6</a></li>
+              <li><a href="html/pl/css/cssborders7.html">Borders: 7</a></li>
            </div>
          </ul>
       </div>
-      <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
+      <div id="css3" data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
        <h3>CSS3</h3>
          <ul class="panel-position-width">
            <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b4">
              <h4>Animations</h4>
-              <li><a onmouseover="click();" href="pl/css3/css3animations1.html" target="iframe_a">Animations: 1</a></li>
-              <li><a onmouseover="click();" href="pl/css3/css3animations2.html" target="iframe_a">Animations: 2</a></li>
-              <li><a onmouseover="click();" href="pl/css3/css3animations3.html" target="iframe_a">Animations: 3</a></li>
-              <li><a onmouseover="click();" href="pl/css3/css3animations4.html" target="iframe_a">Animations: 4</a></li>
-              <li><a onmouseover="click();" href="pl/css3/css3animations5.html" target="iframe_a">Animations: 5</a></li>
-              <li><a onmouseover="click();" href="pl/css3/css3animations6.html" target="iframe_a">Animations: 6</a></li>
-              <li><a onmouseover="click();" href="pl/css3/css3animations7.html" target="iframe_a">Animations: 7</a></li>
-              <li><a onmouseover="click();" href="pl/css3/css3animations8.html" target="iframe_a">Animations: 8</a></li>
-              <li><a onmouseover="click();" href="pl/css3/css3animations9.html" target="iframe_a">Animations: 9</a></li>
-              <li><a onmouseover="click();" href="pl/css3/css3animations10.html" target="iframe_a">Animations: 10</a></li>
+              <li><a href="html/pl/css3/css3animations1.html">Animations: 1</a></li>
+              <li><a href="html/pl/css3/css3animations2.html">Animations: 2</a></li>
+              <li><a href="html/pl/css3/css3animations3.html">Animations: 3</a></li>
+              <li><a href="html/pl/css3/css3animations4.html">Animations: 4</a></li>
+              <li><a href="html/pl/css3/css3animations5.html">Animations: 5</a></li>
+              <li><a href="html/pl/css3/css3animations6.html">Animations: 6</a></li>
+              <li><a href="html/pl/css3/css3animations7.html">Animations: 7</a></li>
+              <li><a href="html/pl/css3/css3animations8.html">Animations: 8</a></li>
+              <li><a href="html/pl/css3/css3animations9.html">Animations: 9</a></li>
+              <li><a href="html/pl/css3/css3animations10.html">Animations: 10</a></li>
            </div>
          </ul>
       </div>
-      <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
+      <div id="html" data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
        <h3>HTML</h3>
          <ul class="panel-position-width">
            <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b5">
              <h4>Vacant</h4>
-              <li><a onmouseover="click();" href="" target="iframe_a">Vacant</a></li>
+              <li><a href="">Vacant</a></li>
            </div>
          </ul>
       </div>
-      <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
+      <div id="js" data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
        <h3>JavaScript</h3>
          <ul class="panel-position-width">
            <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b6">
              <h4>Vacant</h4>
-              <li><a onmouseover="click();" href="" target="iframe_a">Vacant</a></li>
+              <li><a href="">Vacant</a></li>
            </div>
          </ul>
       </div>
     </div>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close Menu</a>
     <br><br><br>
+    <div id="checking"></div>
   </div>
 
-  <div data-role="main" class="ui-content">
-    <a style="font-size:75%; position:absolute; z-index:1; left:-5px; top:-5px; padding:0.3% !important; color: rgba(255, 0, 0, 0);" href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-mini transparent" data-swipe-close="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <iframe class="parent" style="position:absolute; z-index:0; left:0; top:0; width:100%; height:100%;" src="pl/start.html" name="iframe_a"></iframe>
-  </div>
+  <div id="main" data-role="main" class="ui-content main">
+    <a style="position:relative; z-index:1; font-size:75%; left:0px; top:0px; padding:0.3% 0.5% !important; color:#000;" href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-mini transparent" data-swipe-close="true">+ Menu</a>
+    <div class="start" style="position:fixed; font-size:90%; padding-left:312px; top:0; left:0; width:100%; height:100%; background:#fff;" src=""></div>
+    <div id="body">
 
+    <div class="header">
+      <b id="header">TOPIC</b>
+    </div>
+
+    <div class="w3-style">
+      <p id="explanation">EXPLANATION</p>
+      <i>Note: The above explanation was retrieved from w3schools.com.</i>
+    </div>
+
+      <div class="grey-box">
+        <div id="tidbit-mycode" class="tidbit-and-mycode">
+          <div id="tidbit">
+            <div class="tidbit-text-position">
+              <b>Primary Code Tidbit</b>
+              <button class="tidbit-mycode-button up-arrow button-status" onclick="MyCodeGreybox();">
+                <span>&#8689;</span>
+              </button>
+              <button class="tidbit-mycode-button down-arrow button-status" onclick="TidbitGreybox();">
+                <span>&#8690;</span>
+              </button>
+            </div>
+            <pre id="tidbit-box" class="white-box htmlHigh">
+            PRIMARY CODE TIDBIT
+            </pre>
+          </div>
+          <div id="my-code">
+            <div class="mycode-text-position">
+              <b>My Code</b>
+              <button class="tidbit-mycode-button up-arrow button-status" onclick="MyCodeGreybox();">
+                <span>&#8689;</span>
+              </button>
+              <button class="tidbit-mycode-button down-arrow button-status" onclick="TidbitGreybox();">
+                <span>&#8690;</span>
+              </button>
+            </div>
+            <pre id="my-code-box" class="my-code-box white-box htmlHigh">
+            MY CODE
+            </pre>
+          </div>
+        </div>
+        <div id="my-result" class="my-result">
+          <div class="myresult-text-position">
+            <b>My Result</b>
+            <button class="orientation-button button-status" id="left-arrow" onclick="GreyboxLandscape();">
+              <span>&#8676;</span>
+            </button>
+            <button class="orientation-button button-status" id="right-arrow" onclick="GreyboxPortrait();">
+              <span>&#8677;</span>
+            </button>
+          </div>
+          <div id="my-result-box" class="white-box">
+            MY RESULT
+          </div>
+        </div>
+      </div> <!-- End Grey Box -->
+      <br>
+      <i style="font-size:80%">Note: "Primary Code Tidbit" and "My Code" may be identical. "My Code" is only different when it is more complex than "Primary Code Tidbit".</i>
+      <br><br><br>
+    </div> <!-- End div id="body" -->
+  </div> <!-- End Main Content -->
 </div>
 
 <script>
-//var parent = $('.parent');
-//var div = $('div:first-child');
+// This does not work offline on Chrome. However, it does work offline on Firefox.
+$(document).ready(function(){
+  $(".start").load("html/index/start.html");
 
-//parent.on('mousemove', function(e) {
-//    mouseY = e.pageY
-//    console.log(mouseY/parent.height()*1000);
-//    div.css('margin-top',-mouseY/parent.height()*1000);
-//});
+  $("#myPanel").panel("open");
+  setTimeout(function() {
+    $("#blocks-html").load("html/pl/ng1/angularjs.blocks.html");
+    $("#my-result-box").load("html/pl/ng1/angularjs.myresults.html");
+  }, 1000);
 
+});
 </script>
 
+<div id="blocks-html"></div>
+
+<!-- This script is needed so the code colors will work. -->
+<script src="js/libraries/w3codecolor.js"></script>
+<!-- <script>w3CodeColor();</script> The function w3CodeColor() is in page.js because it does not work here since it needs to fire after html is loaded. -->
 </body>
-
-
-<!--
-<div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
- <h3>A</h3>
-   <ul class="panel-position-width">
-     <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b">
-       <h4>Vacant</h4>
-        <li><a onmouseover="click();" href="" target="iframe_a">Vacant</a></li>
-     </div>
-   </ul>
-</div>
--->
-
 </html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+	$("#css").on("click", "li > a", function() {
+    	$(this).parent().css("color", "white");
+        alert($(this).parent().index());
+    });
+
+    //$("#css li > a").click(function(){
+    	//$(this).parent().css("color", "white");
+        //alert($(this).parent().index());
+    //}); THIS IS EQUIVALENT TO THE ABOVE ONE BUT WRITTEN DIFFERENTLY
+
+    $("#css2 li > a").click(function(){
+    	$(this).parent().css("border", "2px solid orange");
+        alert($(this).parent().index());
+    });
+
+    var ol = $('#stuff1 > ol');
+    $('#stuff1').find('li').click(function() {
+    	$(this).css({"color": "red", "border": "2px solid red"});
+        $(this).parent('ol').css("border", "2px solid blue");
+        var parentOl  = $(this).parent('ol');
+        // get current index position of the ol
+        var itemIndex = ol.index(parentOl);
+        alert(itemIndex);
+    });
+
+    var ol_2 = $('#stuff2 > ol');
+    $('#stuff2').find('li').click(function() {
+    	$(this).css({"color": "red", "border": "2px solid red"});
+        $(this).parent('ol').css("border", "2px solid blue");
+        var parentOl_2  = $(this).parent('ol');
+        // get current index position of the ol
+        var itemIndex_2 = ol_2.index(parentOl_2);
+        alert(itemIndex_2);
+    });
+
+  	$("div#css").children("ul").children("div").children("li").children("a").css("background-color", "orange");
+});
+</script>
+</head>
+<body>
+
+			<h3>INDEX FINDING ON CLICK</h3>
+
+			<div id="stuff1">
+			    <h2>Title</h2>
+			    <ol><li>Item</li><li>Item</li><li>Item</li></ol>
+			    <h2>Title</h2>
+			    <ol><li>Item</li><li>Item</li><li>Item</li></ol>
+			    <h2>Title</h2>
+			    <ol><li>Item</li><li>Item</li><li>Item</li></ol>
+			    <h2>Title</h2>
+			    <ol><li>Item</li><li>Item</li><li>Item</li></ol>
+			</div>
+
+			<div id="stuff2">
+			    <h2>Title2</h2>
+			    <ol><li>Item</li><li>Item</li><li>Item</li></ol>
+			    <h2>Title2</h2>
+			    <ol><li>Item</li><li>Item</li><li>Item</li></ol>
+			    <h2>Title2</h2>
+			    <ol><li>Item</li><li>Item</li><li>Item</li></ol>
+			    <h2>Title2</h2>
+			    <ol><li>Item</li><li>Item</li><li>Item</li></ol>
+			</div>
+
+      <div id="css" data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
+       <h3>CSS</h3>
+         <ul class="panel-position-width">
+           <div data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b3">
+             <h4>Borders</h4>
+              <li><a>Borders: 1</a></li>
+              <li><a>Borders: 2</a></li>
+              <li><a>Borders: 3</a></li>
+              <li><a>Borders: 4</a></li>
+              <li><a>Borders: 5</a></li>
+              <li><a>Borders: 6</a></li>
+              <li><a>Borders: 7</a></li>
+           </div>
+         </ul>
+      </div>
+
+      <div id="css2" data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-a">
+       <h3>CSS2</h3>
+         <ul class="panel-position-width">
+           <div id="parent" data-role="collapsible" data-collapsed-icon="true" data-expanded-icon="check" class="color-b b3">
+             <h4>Borders</h4>
+              <li><a>Borders: 1</a></li>
+              <li><a>Borders: 2</a></li>
+              <li><a>Borders: 3</a></li>
+              <li><a>Borders: 4</a></li>
+              <li><a>Borders: 5</a></li>
+              <li><a>Borders: 6</a></li>
+              <li><a>Borders: 7</a></li>
+           </div>
+         </ul>
+      </div>
+
+</body>
+</html>

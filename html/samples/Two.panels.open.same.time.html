@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).ready(function() {
+
+  $(document).off("panelbeforeopen");
+
+  $('#left-square').on("click", function() {
+	openPanels();
+  });
+  $('#right-square').on("click", function() {
+	openPanels();
+  });
+
+  $('#closepanel1').on("click", function() {
+  	closePanels();
+  });
+  $('#closepanel2').on("click", function() {
+  	closePanels();
+  });
+
+});
+
+function closePanels() {
+	$("#myPanel1").panel("close");
+    $("#myPanel2").panel("close");
+}
+
+function openPanels() {
+	$('#button2').trigger('click').trigger('click').trigger('click');
+	$('#button1').trigger('click');
+}
+
+</script>
+
+<style>
+/* Transparent squares were put in front of the + buttons to prevent clicking them which causes irratic button behavior. The transparent squares are used to open the panels when clicked. */
+.transparentsquare {
+	position: absolute;
+    top: 0px;
+    z-index:2;
+    background-color: none; /* You can change the color here to see what the squares look like. */
+	width:70px;
+    height:70px;
+}
+
+.left {left: 0px;}
+.right {right: 0px;}
+
+.behind-cover {
+    position: absolute;
+    top: 0px;
+	z-index:1;
+}
+
+/* Removes blue button color after clicking */
+.ui-btn-active {
+    background-color:#e8e8e8 !important; border-color:#ddd !important; color:#333 !important; text-shadow:none !important;
+}
+
+/* Remove Blue Halo Glow on Button */
+.ui-focus,
+.ui-btn:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.buttonhovercolor {
+	background-color: grey;
+    color: white;
+}
+</style>
+
+</head>
+<body onload="openPanels();">
+
+<div data-role="page" id="pageone">
+
+  <div data-role="panel" id="myPanel1" data-display="overlay" data-dismissible="false">
+    <h2>Panel 1</h2>
+    <a id="closepanel1" href="#pageone" data-rel="close" class="ui-btn ui-btn-inline">Close Panel 1</a>
+  </div>
+
+   <div data-role="panel" id="myPanel2" data-display="overlay" data-position="right" data-dismissible="false">
+    <h2>Panel 2</h2>
+    <a id="closepanel2" href="#pageone" data-rel="close" class="ui-btn ui-btn-inline">Close Panel 2</a>
+  </div>
+
+  <div id="main" data-role="main" class="ui-content">
+
+  	<center><h3>HAVING 2 PANELS OPEN AT THE SAME TIME</h3></center>
+
+  	<div id="left-square" class="transparentsquare left"></div>
+    <a id="button1" href="#myPanel1" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-left behind-cover left" onclick="return false;">+</a>
+
+    <div id="right-square" class="transparentsquare right"></div>
+    <a id="button2" href="#myPanel2" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-right right" onclick="return false;">+</a>
+  </div>
+
+</div>
+
+</body>
+</html>
