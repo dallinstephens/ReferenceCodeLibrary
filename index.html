@@ -58,7 +58,8 @@
                     <a href="css3animations7"><i class="fa fa-pencil-square-o"></i></a>&nbsp;
                     <a href="css3animations8"><i class="fa fa-pencil-square-o"></i></a>&nbsp;
                     <a href="css3animations9"><i class="fa fa-pencil-square-o"></i></a>&nbsp;
-                    <a href="css3animations10"><i class="fa fa-pencil-square-o"></i></a>
+                    <a href="css3animations10"><i class="fa fa-pencil-square-o"></i></a>&nbsp;
+                    <a href="css3animations11"><i class="fa fa-pencil-square-o"></i></a>
                   </summary>
                   <li>
                     <a href="html/pl/css3/css3animations.html#CSS3-animations">CSS3 Animations</a>
@@ -2889,6 +2890,7 @@
               <li><a href="css3animations8">Animations: 8</a></li>
               <li><a href="css3animations9">Animations: 9</a></li>
               <li><a href="css3animations10">Animations: 10</a></li>
+              <li><a href="css3animations11">Animations: 11</a></li>
            </div>
          </ul>
       </div>
@@ -3021,6 +3023,10 @@ $(document).ready(function(){
   var hashLength;
   var hrefWithoutHash;
   var request;
+
+  $('#myPanel-rcl').on('click', 'summary a', function(event) {
+      event.preventDefault(href);
+  });
 
   $('#myPanel-rcl').find('li a').mouseover(function(event) {
 			event.preventDefault(href); // This prevents loading the default href.
