@@ -398,3 +398,15 @@ a.collapsible-header-link {text-decoration: none; color:#000 !important; font-we
 
 /* Title Div */
 .title-div {position:fixed; top:0; left:0; padding-left:17px; width:257px; height:45px; z-index:1; background:#f2f2f2;}
+
+/* Text-Overflow for jQuery Mobile Collapsible Buttons */
+.text-overflow  a {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.text-overflow a:hover {
+    text-overflow: inherit !important;
+    overflow: visible !important;
+}
